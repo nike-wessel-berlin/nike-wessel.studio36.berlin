@@ -227,7 +227,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                Nike Irene Wessel ist Kulturwissenschaftlerin, Autorin und Speakerin
+                Nike Irene Wessel ist Kulturwissenschaftlerin, Autorin und Speakerin.
               </motion.p>
 
               <motion.div

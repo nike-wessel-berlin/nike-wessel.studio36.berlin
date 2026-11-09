@@ -53,6 +53,12 @@ function generateStaticLegalPages(): Plugin {
 export default defineConfig({
   plugins: [react(), tailwindcss(), generateStaticLegalPages()],
   base: '/',
+  server: {
+    port: 5173,
+    strictPort: true,
+    // Agent sandboxes block native file events, so changes would never reach the preview.
+    watch: { usePolling: true, interval: 300 },
+  },
   build: {
     minify: 'terser',
     terserOptions: {
