@@ -33,6 +33,11 @@ const pVariants = {
 
 const magazineLogos = [
   {
+    src: '/images/magazin/republica-logo.svg',
+    alt: 're:publica speaker profile',
+    href: 'https://re-publica.com/de/user/3673',
+  },
+  {
     src: '/images/magazin/taz-logo.svg',
     alt: 'taz article',
     href: 'https://taz.de/Nike-Wessel/!a226366/',
@@ -41,6 +46,11 @@ const magazineLogos = [
     src: '/images/magazin/tagesspiegel-logo.svg',
     alt: 'Tagesspiegel article',
     href: 'https://www.tagesspiegel.de/gesellschaft/autorin-nike-wessel-uber-die-sexpositive-szene-in-berlin-die-gaste-ringen-nackt-und-eingeolt-miteinander-14107283.html',
+  },
+  {
+    src: '/images/magazin/Missy-Magazine-logo-white.png.webp',
+    alt: 'Missy Magazine',
+    href: 'https://missy-magazine.de/blog/author/nikewessel/',
   },
   {
     src: '/images/magazin/monopol-logo-1.svg',
@@ -68,9 +78,9 @@ const magazineLogos = [
     href: 'https://www.vice.com/de/article/sex-in-berlin-podcast-was-ich-waehrend-eines-jahres-in-berlins-sexpositiver-szene-gelernt-habe',
   },
   {
-    src: '/images/magazin/Missy-Magazine-logo-white.png.webp',
-    alt: 'Missy Magazine',
-    href: 'https://missy-magazine.de/blog/author/nikewessel/',
+    src: '/images/magazin/emotion-logo.svg',
+    alt: 'Emotion article',
+    href: bioLinks.Emotion,
   },
   {
     src: '/images/magazin/amazingy-logo.png',
@@ -227,7 +237,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                Nike Irene Wessel ist Kulturwissenschaftlerin, Autorin und Speakerin.
+                Nike Irene Wessel ist Kulturwissenschaftlerin.
               </motion.p>
 
               <motion.div
@@ -286,7 +296,7 @@ export default function About() {
                 </motion.p>
 
                 <motion.p variants={pVariants}>
-                  Als Medientrainerin arbeitet sie unter anderem für das ZDF.
+                  Als Medientrainerin arbeitet sie unter anderem für die ZDF Medienakademie.
                 </motion.p>
 
                 <motion.p variants={pVariants}>

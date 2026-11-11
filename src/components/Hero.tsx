@@ -35,14 +35,16 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: [0, 0, 0.2, 1] }}
           >
-            <img
-              src={`${import.meta.env.BASE_URL}images/nike-720w.webp`}
-              alt=""
+            <video
+              src={`${import.meta.env.BASE_URL}videos/nike-wink-v3.mp4`}
+              poster={`${import.meta.env.BASE_URL}images/nike-720w.webp`}
               width={720}
               height={1206}
-              fetchPriority="high"
-              decoding="async"
-              className="w-full object-cover ken-burns"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover object-top grayscale ken-burns"
               aria-hidden="true"
             />
             <div className="absolute inset-0 bg-black/0 pointer-events-none" aria-hidden />
@@ -127,16 +129,17 @@ export default function Hero() {
           animate="visible"
           variants={fromBottom}
         >
-          <img
-            src={`${import.meta.env.BASE_URL}images/nike.webp`}
-            srcSet={`${import.meta.env.BASE_URL}images/nike-720w.webp 720w, ${import.meta.env.BASE_URL}images/nike.webp 942w`}
-            sizes="(min-width: 1400px) 630px, 45vw"
-            alt="Nike Wessel"
+          <video
+            src={`${import.meta.env.BASE_URL}videos/nike-wink-v3.mp4`}
+            poster={`${import.meta.env.BASE_URL}images/nike.webp`}
+            aria-label="Nike Wessel"
             width={942}
             height={1578}
-            fetchPriority="high"
-            decoding="async"
-            className="w-full object-cover ken-burns"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full object-cover grayscale ken-burns"
           />
         </motion.div>
       </div>
